@@ -1,0 +1,1 @@
+key_vault_purge_protection_enabled = false
