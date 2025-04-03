@@ -11,12 +11,10 @@ locals {
   }
 
   enable_telemetry = var.enable_telemetry != null ? var.enable_telemetry : true
-  tags = merge(
-    var.tags,
-    {
-      Brand       = var.brand
-      Application = var.application
-      Environment = var.environment
+  tags = merge(var.tags, {
+    Brand       = var.brand
+    Application = var.application
+    Environment = var.environment
     }
   )
 }
